@@ -48,29 +48,33 @@ Control structures are fundamental to programming logic. CSV files are widely us
    - URL: [DRY Principle](https://www.makeuseof.com/python-dry-principle/)
    - Purpose: To understand and apply the DRY principle for writing maintainable and efficient Python code.
 
-6. **Article: "Error Handling in Python: A Deep Dive"**
+8. **Article: Look Before You Leap and Easier to Ask Forgiveness than Permission**
+   - URL: [LBYL vs EAFP: Preventing or Handling Errors in Python])https://realpython.com/python-lbyl-vs-eafp/)
+   - PuRPOSE: To learn the how and when to validate user input and hanlde error.
+     
+7. **Article: "Error Handling in Python: A Deep Dive"**
    - URL: [Error Handling in Python](https://realpython.com/python-exceptions/)
    - Purpose: To master different strategies for robust error handling in Python.
 
-7. **Article: "Comprehensive Guide to Testing in Python"**
+8. **Article: "Comprehensive Guide to Testing in Python"**
    - URL: [Testing in Python](https://realpython.com/python-testing/)
    - Purpose: To learn comprehensive testing strategies using pytest.
 
 ### Watch
 
-1. **Video: "Advanced Python Control Structures" (20 minutes)**
+1. **Video: "Python Control Structures" (15 minutes)**
    - Purpose: To provide a comprehensive overview of complex loops and conditionals in Python.
 
-2. **Video: "Creating Interactive Command-Line Applications in Python" (20 minutes)**
+2. **Video: "Creating Interactive Command-Line Applications in Python" (15 minutes)**
    - Purpose: To demonstrate techniques for building user-friendly command-line interfaces.
 
-3. **Video: "Mastering CSV Operations in Python" (20 minutes)**
+3. **Video: "Mastering CSV Operations in Python" (15 minutes)**
    - Purpose: To provide an in-depth guide to handling CSV files efficiently in Python.
 
-4. **Video: "Implementing REPL in Python Applications" (20 minutes)**
+4. **Video: "Implementing REPL in Python Applications" (15 minutes)**
    - Purpose: To explain and demonstrate the Read-Eval-Print Loop pattern in Python.
 
-5. **Video: "Best Practices for Python Development" (20 minutes)**
+5. **Video: "Best Practices for Python Development" (15 minutes)**
    - Purpose: To cover DRY principle, code organization, and other professional coding practices.
 
 ### Review
@@ -107,9 +111,11 @@ Control structures are fundamental to programming logic. CSV files are widely us
 - Create and activate a virtual environment for your project.
 - Develop a command-line application that processes CSV files:
   - Implement a REPL (Read-Eval-Print Loop) interface for user interaction.
-  - Allow users to load CSV files, display data, perform basic data analysis (e.g., find max/min values, calculate averages), and save modified data back to CSV.
-  - Include options to sort data, filter rows, and perform basic data transformations.
-- Ensure your application handles various CSV formats and includes comprehensive error handling.
+  - Allow users to output the CSV file as a simple web page with a table
+  - Ask the user for a title for the web page
+  - Ask the user the purpose of the CSV file and include this a description on the web page
+  - Ask the user for the location of the CSV file and validate the path to the CSV file
+  - Ask the user for the output directory of the CSV file and validate it.  Check it for absolute or relative path i.e. starting with a / or not   
 - Apply the DRY principle and other best practices throughout your code.
 - Implement proper logging to track application behavior and user actions.
 - Write extensive unit tests using pytest to verify the functionality of your application.
@@ -156,20 +162,3 @@ Control structures are fundamental to programming logic. CSV files are widely us
 - The quiz will assess your understanding of complex control structures, CSV file operations, REPL pattern implementation, application of the DRY principle, error handling strategies, and testing with pytest.
 - Review all provided materials, including cheat sheets, tutorials, and your project code before taking the quiz.
 - The quiz will include multiple-choice, short answer, and code analysis questions to thoroughly evaluate your comprehension and application of the module's content.
-
-### Additional Information
-
-#### Best Practices for Command-Line Applications
-
-When developing command-line applications, consider the following best practices:
-
-1. **User-Friendly Interface:** Provide clear prompts and helpful error messages.
-2. **Input Validation:** Always validate user input to prevent unexpected errors.
-3. **Consistent Command Structure:** Use a consistent format for commands and options.
-4. **Help Documentation:** Implement a 'help' command or option to display usage instructions.
-5. **Graceful Error Handling:** Catch and handle exceptions to prevent crashes and provide useful feedback.
-6. **Progress Indicators:** For long-running operations, provide progress updates to the user.
-7. **Configuration Files:** Consider using configuration files for storing default settings.
-8. **Modularity:** Design your application with modular components for easier maintenance and testing.
-
-By following these practices, you can create professional-grade command-line applications that are both powerful and user-friendly.
